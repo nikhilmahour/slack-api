@@ -21,16 +21,16 @@ async function slackOperations() {
     await web.chat.update({
       channel: channelId,
       ts: ts,
-      text: '✅ Message updated!',
+      text: ' Message updated! the massese sent ',
     });
     console.log('Message updated');
 
     // 3. Delete message
-    await web.chat.delete({
-      channel: channelId,
-      ts: ts,
-    });
-    console.log('Message deleted');
+      // await web.chat.delete({
+      //   channel: channelId,
+      //   ts: ts,
+      // });
+      // console.log('Message deleted');
 
   } catch (error) {
     console.error('Error occurred:', error.data || error.message);
